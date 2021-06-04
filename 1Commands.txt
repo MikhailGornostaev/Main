@@ -1,0 +1,36 @@
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
+4) Создать три папки  - mkdir foldername0 foldername1 foldername2
+5) Зайти в любую папку - cd /firstdirectory/seconddirectory/
+6) Создать 5 файлов (3 txt, 2 json) - touch file0.txt file1.txt file2.txt file3.json file4.json
+7) Создать 3 папки - mkdir foldername3 foldername4 foldername5
+8) Вывести список содержимого папки - ls
+9) Открыть любой txt файл - vim filename
+10) Написать туда что-нибудь - жмем a,i или l и пишем любой текст
+11) Сохранить и выйти - переходим в коммандный режим(Esc), пишем :w затем :q для выхода
+12) Выйти из папки на уровень выше - cd ..
+13) Переместить любые два файла, которые вы создали, в любую другую папку - mv "/c/.../file0" "/c/.../file1" "c/.../foldername"
+14) Скопировать любые два файла в любую другую папку - cp "/c/.../file0" "/c/.../file1" "c/.../foldername"
+15) Найти файл по имени - find "/c/.." - name "filename.txt"
+16) Посмотреть содержимое в реальном времени - grep "" filename.txt
+17) Вывести несколько первых строк из файла - head -n2 filename.txt
+18) Вывести несколько последних строк из файла - tail -n2 filename.txt
+19) Посмотреть содержимое длинного файла - less filename.txt
+20) Вывести дату и время - date
+
+Задание*:
+1) Отправить http запрос на сервер https://api.quarantine.country/api/v1/regions - curl https://api.quarantine.country/api/v1/regions
+2) Написать скрипт который сделает пункты 3-8 и 13 автоматически.
+
+*Содержание скрипта:
+
+cd testfolder1
+mkdir tst1 tst2 tst3
+cd tst2
+touch test0.txt test1.txt test2.txt test3.json test4.json
+mkdir tst4 tst5 tst6
+mv "/c/Users/Mikhail Gornostaev/testfolder/testfolder1/tst2/test0.txt" "/c/Users/Mikhail Gornostaev/testfolder/testfolder1/tst2/test1.txt" "/c/Users/Mikhail Gornostaev/testfolder/testfolder1/tst2/tst4"
+ls -la
+
+
